@@ -4,6 +4,9 @@ import GlitchText from './GlitchText';
 import ParticlesBackground from './ParticlesBackground';
 
 const HeroSection = () => {
+  // Get social media URLs from environment variables
+  const telegramUrl = import.meta.env.VITE_TELEGRAM_URL || "https://t.me/aicecubeonabstract";
+  
   return (
     <section id="home" className="min-h-screen relative overflow-hidden">
       <ParticlesBackground />
@@ -72,7 +75,7 @@ const HeroSection = () => {
             <FaRocket /> Launch on Moonshot
           </motion.button>
           <motion.a
-            href="https://t.me/aicecubeonabstract"
+            href={telegramUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="border-2 border-[#ADD8E6] text-white font-bold py-3 px-8 rounded-full hover:bg-[#ADD8E6]/10 transition-all text-center"

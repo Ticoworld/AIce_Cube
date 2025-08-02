@@ -4,7 +4,12 @@ import { useState } from 'react';
 import MobileMenu from './MobileMenu';
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  
+  // Get social media URLs from environment variables
+  const telegramUrl = import.meta.env.VITE_TELEGRAM_URL || "https://t.me/aicecubeonabstract";
+  const twitterUrl = import.meta.env.VITE_TWITTER_URL || "https://x.com/cubeonabstract";
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -54,7 +59,7 @@ const Header = () => {
           <div className="flex items-center space-x-4">
             <div className="hidden md:flex space-x-4">
               <motion.a 
-                href="https://t.me/aicecubeonabstract" 
+                href={telegramUrl} 
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.2, rotate: 10 }}
@@ -62,7 +67,7 @@ const Header = () => {
                 <FaTelegram className="text-[#ADD8E6] text-xl hover:text-[#E0F6FF] transition-colors" />
               </motion.a>
               <motion.a 
-                href="https://x.com/cubeonabstract" 
+                href={twitterUrl} 
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.2, rotate: -10 }}

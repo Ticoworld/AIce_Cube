@@ -3,6 +3,10 @@ import { FaTelegram, FaTwitter, FaSnowflake } from 'react-icons/fa';
 import AnimatedBackground from './AnimatedBackground';
 
 const CommunitySection = () => {
+  // Get social media URLs from environment variables
+  const telegramUrl = import.meta.env.VITE_TELEGRAM_URL || "https://t.me/aicecubeonabstract";
+  const twitterUrl = import.meta.env.VITE_TWITTER_URL || "https://x.com/cubeonabstract";
+  
   return (
     <section id="community" className="py-20 relative overflow-hidden">
       {/* Animated background for Community section */}
@@ -47,7 +51,7 @@ const CommunitySection = () => {
                   <FaTwitter className="text-[#87CEEB] text-6xl mb-4 mx-auto" />
                   <p className="text-[#ADD8E6] mb-4">Follow us for the latest updates</p>
                   <motion.a
-                    href="https://x.com/cubeonabstract"
+                    href={twitterUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-gradient-to-r from-[#ADD8E6] to-[#87CEEB] text-[#1C2526] font-bold py-2 px-6 rounded-full inline-flex items-center hover:shadow-lg hover:shadow-[#ADD8E6]/50 transition-all"
@@ -79,7 +83,7 @@ const CommunitySection = () => {
               </p>
               
               <motion.a
-                href="https://t.me/aicecubeonabstract"
+                href={telegramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-[#ADD8E6] to-[#87CEEB] text-[#1C2526] font-bold py-3 px-8 rounded-full inline-flex items-center hover:shadow-lg hover:shadow-[#ADD8E6]/50 transition-all mb-8"

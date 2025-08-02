@@ -9,13 +9,17 @@ const TokenSection = () => {
   const [copied, setCopied] = useState(false);
   const [cubeAnim, setCubeAnim] = useState(false);
 
+  // Get contract address from environment variable
+  const contractAddress = import.meta.env.VITE_CONTRACT_ADDRESS;
+  const displayAddress = contractAddress || 'CA: Soon™';
+
   const handleCopy = () => {
     setCopied(true);
     setCubeAnim(true);
     setTimeout(() => setCopied(false), 1500);
     setTimeout(() => setCubeAnim(false), 1000);
-    // Simulate copying CA (even though it's not live)
-    navigator.clipboard.writeText('CA: Soon™');
+    // Copy the actual address if available, otherwise copy "CA: Soon™"
+    navigator.clipboard.writeText(contractAddress || 'CA: Soon™');
   };
 
   return (
@@ -100,7 +104,7 @@ const TokenSection = () => {
                   <h4 className="text-[#87CEEB] font-bold">Contract Address</h4>
                   <div className="flex items-center gap-2 relative min-h-[40px]">
                     <p className="text-[#E0F6FF] bg-gradient-to-r from-[#ADD8E6]/20 to-[#87CEEB]/20 px-3 py-2 rounded-lg border border-[#ADD8E6]/30 select-all">
-                      CA: Soon™
+                      {displayAddress}
                     </p>
                     <button
                       onClick={handleCopy}
