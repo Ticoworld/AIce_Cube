@@ -3,6 +3,7 @@ import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
 import TokenSection from './components/TokenSection';
+import MemesSection from './components/MemesSection';
 import CommunitySection from './components/CommunitySection';
 import LoadingScreen from './components/LoadingScreen';
 import ScrollToTop from './components/ScrollToTop';
@@ -19,6 +20,7 @@ function App() {
       <HeroSection />
       <AboutSection />
       <TokenSection />
+      <MemesSection />
       <CommunitySection />
       
       {/* Footer */}

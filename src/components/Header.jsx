@@ -43,6 +43,7 @@ const Header = () => {
               { label: 'Home', id: 'home' },
               { label: 'About', id: 'about' },
               { label: 'Token', id: 'token' },
+              { label: 'Memes', id: 'memes' },
               { label: 'Community', id: 'community' }
             ].map((item) => (
               <motion.button

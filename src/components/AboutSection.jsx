@@ -4,9 +4,11 @@ import AnimatedBackground from './AnimatedBackground';
 
 const AboutSection = () => {
   const timeline = [
-    { date: "July 28, 2025", event: "Dexscreener debut", description: "First appearance with banner on Dexscreener" },
-    { date: "August 1, 2025", event: "Community launch", description: "Telegram and X channels established" },
-    { date: "Coming Soon", event: "AI bot launch", description: "The meanest bot on Abstract goes live" },
+    { date: "May 2025", event: "Foundation", description: "Twitter created and bot development begins" },
+    { date: "June 2025", event: "Bot Refinement", description: "Engagement bot perfected, delivering 60K impressions" },
+    { date: "July 2025", event: "Launch Preparation", description: "Telegram community created, Dexscreener planning" },
+    { date: "August 2025", event: "$AICE Launch", description: "Token launches on Abstract blockchain" },
+    { date: "September 2025", event: "Stake & Engage", description: "Stake or burn $AICE to boost your X engagement" },
   ];
 
   return (
@@ -46,6 +48,12 @@ const AboutSection = () => {
                 cutting-edge AI technology and the raw energy of hip-hop culture. 
                 Inspired by the legendary rapper Ice Cube, we're bringing that 
                 "mean" attitude to the blockchain.
+              </p>
+              <p className="mb-4 text-[#E0F6FF]">
+                Our flagship AI engagement bot has already proven its power, delivering 
+                over <span className="text-[#87CEEB] font-bold">60,000 impressions</span> during development. 
+                Soon, you'll be able to stake or burn <span className="text-[#00FF00]">$A</span><span className="text-[#ADD8E6]">ICE </span> 
+                to harness this bot's power for your own X engagement.
               </p>
               <p className="mb-4 text-[#E0F6FF]">
                 The name <span className="text-[#00FF00]">A</span><span className="text-[#ADD8E6]">ice</span> fuses <span className="text-[#00FF00]">"A</span><span className="text-[#ADD8E6]">I"</span> 
