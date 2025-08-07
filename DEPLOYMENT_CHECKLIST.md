@@ -52,7 +52,7 @@ VITE_CONTRACT_ADDRESS=
 
 # Social Links
 VITE_TELEGRAM_URL=https://t.me/aicecubeonabstract
-VITE_TWITTER_URL=https://x.com/cubeonabstract
+VITE_TWITTER_URL=https://x.com/aicexbt
 VITE_BOT_URL=https://x.com/aicexbt
 
 # Trading Links
