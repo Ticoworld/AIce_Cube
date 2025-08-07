@@ -127,7 +127,7 @@ const LoadingScreen = () => {
             ease: "easeInOut"
           }}
         >
-          <span className="text-[#00FF00]">Loading $A</span><span className="text-[#ADD8E6]">ICE</span>
+          <span className="text-[#00FF00]">Loading $A</span><span className="text-[#00FF00]">I</span><span className="text-[#ADD8E6]">CE</span>
         </motion.h1>
         
         <motion.p
@@ -155,7 +155,7 @@ const LoadingScreen = () => {
           animate={{ opacity: [0.3, 1, 0.3] }}
           transition={{ duration: 2, repeat: Infinity }}
         >
-          Initializing Kaito farming protocols...
+          Initializing AIceXBT Market Intelligence
         </motion.div>
       </div>
     </motion.div>

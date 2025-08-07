@@ -163,7 +163,7 @@ const MemesSection = () => {
     {
       id: 12,
       type: 'image',
-      src: '/banner.png',
+      src: '/banner.jpeg',
       title: 'AIce Banner',
       description: 'Official AIce branding'
     },

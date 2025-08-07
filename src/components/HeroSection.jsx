@@ -22,7 +22,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
         >
-          <img src="/logo.png" alt="AIce Logo" className="mx-auto w-40 h-40 rounded-full shadow-lg" />
+          <img src="/logo.png" alt="AIce Logo" className="mx-auto w-40 h-40  shadow-lg" />
         </motion.div>
         
         <motion.h1 
@@ -53,8 +53,8 @@ const HeroSection = () => {
             Empowering users with the framework of cutting-edge AI technology and a touch of icy precision
           </p>
           <div className="text-[#ADD8E6] space-y-2">
-            <p>02 Powered by custom built Abstract token market intelligence bot</p>
-            <p>02 Based dev who won't rug you at 92% bonding curve</p>
+            <p>• Powered by custom built Abstract token market intelligence bot</p>
+            <p>• Based dev who won't rug you at 92% bonding curve</p>
             <p className="text-[#E0F6FF] font-bold flex items-center justify-center gap-2">
               Good luck! <FaSnowflake className="text-[#87CEEB]" />
             </p>
@@ -87,7 +87,7 @@ const HeroSection = () => {
         </motion.div>
       </div>
 
-      <div className="absolute inset-0 bg-[url('/banner.png')] bg-cover bg-center opacity-20"></div>
+      <div className="absolute inset-0 bg-[url('/banner.jpeg')] bg-cover bg-center opacity-20"></div>
     </section>
   );
 };
