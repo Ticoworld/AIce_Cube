@@ -33,11 +33,11 @@ function App() {
       >
         <div className="container mx-auto px-4">
           <div className="font-['Space_Grotesk'] text-2xl mb-4">
-            <span className="text-[#00FF00]">A</span><span className="text-[#ADD8E6]">ICE</span>
+            <span className="text-[#00FF00]">A</span><span className="text-[#00FF00]">I</span><span className="text-[#ADD8E6]">CE</span>
           </div>
           <p className="text-[#87CEEB] mb-4">The meanest bot on Abstract</p>
           <p className="text-sm opacity-70 text-[#E0F6FF]">
-            © {new Date().getFullYear()} $Aice. All rights reserved.
+            © {new Date().getFullYear()} $<span className="text-[#00FF00]">A</span><span className="text-[#00FF00]">I</span><span className="text-[#ADD8E6]">ce</span>. All rights reserved.
           </p>
         </div>
       </motion.footer>

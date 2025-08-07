@@ -31,7 +31,7 @@ const DexWidget = () => {
             <FaChartLine />
           </motion.div>
           <h3 className="text-2xl text-[#ADD8E6] mb-4 font-['Space_Grotesk']">
-            <span className="text-[#00FF00]">$A</span>ICE Chart
+            <span className="text-[#00FF00]">$AI</span>CE Chart
           </h3>
           <p className="text-[#87CEEB] mb-4">Track $AICE on Moonshot</p>
           <div className="text-sm opacity-70 text-[#E0F6FF]">

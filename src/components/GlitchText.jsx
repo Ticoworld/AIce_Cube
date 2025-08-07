@@ -2,11 +2,22 @@ import { motion } from 'framer-motion';
 
 const GlitchText = ({ text }) => {
   const renderStyledText = (textContent, className) => {
+    // Highlight both A and I in green for $AICE and Aice
     if (textContent === '$AICE') {
       return (
         <span className={className}>
           <span className="text-[#00FF00]">$A</span>
-          <span className="text-[#ADD8E6]">ICE</span>
+          <span className="text-[#00FF00]">I</span>
+          <span className="text-[#ADD8E6]">CE</span>
+        </span>
+      );
+    }
+    if (textContent === 'Aice') {
+      return (
+        <span className={className}>
+          <span className="text-[#00FF00]">A</span>
+          <span className="text-[#00FF00]">I</span>
+          <span className="text-[#ADD8E6]">ce</span>
         </span>
       );
     }

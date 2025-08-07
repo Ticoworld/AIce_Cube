@@ -9,8 +9,9 @@ const Header = () => {
   
   // Get social media URLs from environment variables
   const telegramUrl = import.meta.env.VITE_TELEGRAM_URL || "https://t.me/aicecubeonabstract";
-  const twitterUrl = import.meta.env.VITE_TWITTER_URL || "https://x.com/cubeonabstract";
-  const botUrl = import.meta.env.VITE_BOT_URL || "https://x.com/aicexbt";
+  // Only use the new X account for all X links
+  const twitterUrl = "https://x.com/aicexbt";
+  const botUrl = "https://x.com/aicexbt";
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -35,7 +36,7 @@ const Header = () => {
           >
             <img src="/logo.png" alt="AIce Logo" className="w-10 h-10 rounded-full" />
             <span className="font-['Space_Grotesk'] text-2xl text-[#ADD8E6] font-semibold">
-              <span className="text-[#00FF00]">A</span>ice
+              <span className="text-[#00FF00]">A</span><span className="text-[#00FF00]">I</span><span className="text-[#ADD8E6]">ce</span>
             </span>
           </motion.div>
           

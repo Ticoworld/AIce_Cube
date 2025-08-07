@@ -207,7 +207,7 @@ const MemesSection = () => {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <span className="text-[#00FF00]">A</span><span className="text-[#ADD8E6]">ice</span> <span className="text-[#87CEEB]">Memes</span>
+          <span className="text-[#00FF00]">A</span><span className="text-[#00FF00]">I</span><span className="text-[#ADD8E6]">ce</span> <span className="text-[#87CEEB]">Memes</span>
         </motion.h2>
 
         <motion.p 
@@ -217,7 +217,7 @@ const MemesSection = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          The coldest memes in crypto. Share the <span className="text-[#00FF00]">A</span><span className="text-[#ADD8E6]">ice</span> vibes with your crew! 🧊
+          The coldest memes in crypto. Share the <span className="text-[#00FF00]">A</span><span className="text-[#00FF00]">I</span><span className="text-[#ADD8E6]">ce</span> vibes with your crew! 🧊
         </motion.p>
 
         {/* Memes Grid - Responsive: 2 cols mobile, 3 cols tablet, 5 cols desktop */}

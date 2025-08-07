@@ -40,7 +40,7 @@ const HeroSection = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
         >
-          AIce Cube on Abstract
+          <span className="text-[#00FF00]">A</span><span className="text-[#00FF00]">I</span><span className="text-[#ADD8E6]">ce Cube on Abstract</span>
         </motion.h2>
         
         <motion.div 
@@ -53,8 +53,8 @@ const HeroSection = () => {
             Empowering users with the framework of cutting-edge AI technology and a touch of icy precision
           </p>
           <div className="text-[#ADD8E6] space-y-2">
-            <p>• Powered by custom built Kaito farming bot</p>
-            <p>• Based dev who won't rug you at 92% bonding curve</p>
+            <p>02 Powered by custom built Abstract token market intelligence bot</p>
+            <p>02 Based dev who won't rug you at 92% bonding curve</p>
             <p className="text-[#E0F6FF] font-bold flex items-center justify-center gap-2">
               Good luck! <FaSnowflake className="text-[#87CEEB]" />
             </p>

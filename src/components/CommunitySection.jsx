@@ -5,7 +5,8 @@ import AnimatedBackground from './AnimatedBackground';
 const CommunitySection = () => {
   // Get social media URLs from environment variables
   const telegramUrl = import.meta.env.VITE_TELEGRAM_URL || "https://t.me/aicecubeonabstract";
-  const twitterUrl = import.meta.env.VITE_TWITTER_URL || "https://x.com/cubeonabstract";
+  // Only use the new X account for all X links
+  const twitterUrl = "https://x.com/aicexbt";
   
   return (
     <section id="community" className="py-20 relative overflow-hidden">
@@ -33,7 +34,7 @@ const CommunitySection = () => {
           <h3 className="text-3xl text-[#87CEEB] mb-4 font-['Space_Grotesk']">Stay Frosty with the Crew</h3>
           <p className="text-lg text-[#E0F6FF]">
             Join our growing community of AI and crypto enthusiasts. Be the first to get updates, 
-            participate in events, and help shape the future of <span className="text-[#00FF00]">A</span><span className="text-[#ADD8E6]">ice</span>.
+            participate in events, and help shape the future of <span className="text-[#00FF00]">A</span><span className="text-[#00FF00]">I</span><span className="text-[#ADD8E6]">ce</span>.
           </p>
         </motion.div>
         
@@ -45,7 +46,7 @@ const CommunitySection = () => {
             viewport={{ once: true }}
           >
             <div className="bg-[#1C2526]/50 border border-[#ADD8E6]/30 rounded-xl p-6 h-full">
-              <h3 className="text-2xl text-[#ADD8E6] mb-4 font-['Space_Grotesk']">Twitter Updates</h3>
+              <h3 className="text-2xl text-[#ADD8E6] mb-4 font-['Space_Grotesk']">X Updates</h3>
               <div className="bg-gradient-to-br from-[#1C2526] to-[#2A3B3D] rounded-lg p-6 h-96 flex items-center justify-center border border-[#ADD8E6]/20">
                 <div className="text-center">
                   <FaTwitter className="text-[#87CEEB] text-6xl mb-4 mx-auto" />
@@ -58,7 +59,7 @@ const CommunitySection = () => {
                     whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <FaTwitter className="mr-2" /> Follow @cubeonabstract
+                    <FaTwitter className="mr-2" /> Follow @aicexbt
                   </motion.a>
                 </div>
               </div>
@@ -79,7 +80,7 @@ const CommunitySection = () => {
               <h3 className="text-2xl text-[#ADD8E6] mb-4 font-['Space_Grotesk']">Telegram Community</h3>
               <p className="mb-6 max-w-md text-[#E0F6FF]">
                 Join our active Telegram group for real-time discussions, announcements, 
-                and direct access to the <span className="text-[#00FF00]">A</span><span className="text-[#ADD8E6]">ice</span> team.
+                and direct access to the <span className="text-[#00FF00]">A</span><span className="text-[#00FF00]">I</span><span className="text-[#ADD8E6]">ce</span> team.
               </p>
               
               <motion.a

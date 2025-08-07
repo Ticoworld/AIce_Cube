@@ -35,7 +35,7 @@ const TokenSection = () => {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <span className="text-[#00FF00]">A</span><span className="text-[#ADD8E6]">ice Token</span>
+          <span className="text-[#00FF00]">A</span><span className="text-[#00FF00]">I</span><span className="text-[#ADD8E6]">ce Token</span>
         </motion.h2>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -63,7 +63,7 @@ const TokenSection = () => {
                   <div>
                     <h4 className="text-[#87CEEB] font-bold">Name</h4>
                     <p className="text-[#E0F6FF]">
-                      <span className="text-[#00FF00]">A</span>ice
+                      <span className="text-[#00FF00]">A</span><span className="text-[#00FF00]">I</span><span className="text-[#ADD8E6]">ce</span>
                     </p>
                   </div>
                 </div>
@@ -96,7 +96,7 @@ const TokenSection = () => {
                   <FaRocket className="text-[#ADD8E6]" />
                   <div>
                     <h4 className="text-[#87CEEB] font-bold">Bonding Curve</h4>
-                    <p className="text-[#E0F6FF]">92% - Based dev won't rug you</p>
+                    <p className="text-[#E0F6FF]">We bond and moon, or we go back to 5k MC. Dev is not going to rug the bond at 92% like the majority of shitcoins</p>
                   </div>
                 </div>
                 
