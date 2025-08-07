@@ -39,7 +39,7 @@ Create a `.env` file in the root directory with the following variables:
 |----------|-------------|---------|
 | `VITE_CONTRACT_ADDRESS` | Token contract address (leave empty to show "CA: Soon™") | Empty |
 | `VITE_TELEGRAM_URL` | Telegram community link | `https://t.me/aicecubeonabstract` |
-| `VITE_TWITTER_URL` | Twitter/X profile link | `https://x.com/aicexbt` |
+| `VITE_TWITTER_URL` | Twitter/X profile link | `https://x.com/cubeonabstract` |
 | `VITE_DEX_SCREENER_URL` | DexScreener chart link | Empty |
 | `VITE_UNISWAP_URL` | Uniswap swap link | Empty |
 
@@ -50,7 +50,7 @@ VITE_CONTRACT_ADDRESS=0x1234567890abcdef1234567890abcdef12345678
 
 # Social Media Links
 VITE_TELEGRAM_URL=https://t.me/aicecubeonabstract
-VITE_TWITTER_URL=https://x.com/aicexbt
+VITE_TWITTER_URL=https://x.com/cubeonabstract
 
 # Trading Links
 VITE_DEX_SCREENER_URL=https://dexscreener.com/abstract/0x1234567890abcdef1234567890abcdef12345678

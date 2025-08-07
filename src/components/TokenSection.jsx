@@ -45,7 +45,28 @@ const TokenSection = () => {
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
           >
-            <DexWidget />
+            {/* Dexscreener Chart Embed */}
+            <div className="bg-[#1C2526]/60 border border-[#ADD8E6]/30 rounded-xl p-4 mb-6">
+              <h3 className="text-xl text-[#ADD8E6] font-bold mb-2 font-['Space_Grotesk']">$AICE Chart</h3>
+              <iframe
+                src="https://dexscreener.com/abstract/0x6ca4e4496f124d53ce1ae33d6918c891514e72c7?embed=1"
+                title="$AICE Chart"
+                width="100%"
+                height="400"
+                style={{ border: 'none', borderRadius: '12px', minWidth: '320px' }}
+                allowFullScreen
+              ></iframe>
+              <div className="flex flex-col sm:flex-row sm:justify-between items-center mt-2 gap-2">
+                <a
+                  href="https://dexscreener.com/abstract/0x6ca4e4496f124d53ce1ae33d6918c891514e72c7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#00FF00] underline hover:text-[#87CEEB] font-bold text-sm"
+                >
+                  View on Dexscreener
+                </a>
+              </div>
+            </div>
           </motion.div>
           
           <motion.div
