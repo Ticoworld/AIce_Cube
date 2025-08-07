@@ -78,8 +78,9 @@ const MemesSection = () => {
     }
   };
 
-  // Sample memes data - reduced to 4 for better layout
+  // Memes data - includes GIFs and new image gallery
   const memes = [
+    // Existing GIFs
     {
       id: 1,
       type: 'gif',
@@ -107,6 +108,85 @@ const MemesSection = () => {
       src: '/gif4.mp4',
       title: 'Bot Power',
       description: 'When the AI engagement hits'
+    },
+    // New image gallery
+    {
+      id: 5,
+      type: 'image',
+      src: '/image1.jpg',
+      title: 'AIce Meme 1',
+      description: 'Fresh AIce content'
+    },
+    {
+      id: 6,
+      type: 'image',
+      src: '/image2.jpg',
+      title: 'AIce Meme 2',
+      description: 'More icy goodness'
+    },
+    {
+      id: 7,
+      type: 'image',
+      src: '/image3.jpg',
+      title: 'AIce Meme 3',
+      description: 'The coldest takes'
+    },
+    {
+      id: 8,
+      type: 'image',
+      src: '/image4.jpg',
+      title: 'AIce Meme 4',
+      description: 'Freezing the competition'
+    },
+    {
+      id: 9,
+      type: 'image',
+      src: '/image5.jpg',
+      title: 'AIce Meme 5',
+      description: 'Ice cold community'
+    },
+    {
+      id: 10,
+      type: 'image',
+      src: '/image6.jpg',
+      title: 'AIce Meme 6',
+      description: 'Chilling with $AICE'
+    },
+    {
+      id: 11,
+      type: 'image',
+      src: '/image7.jpg',
+      title: 'AIce Meme 7',
+      description: 'The iciest meme yet'
+    },
+    // Bonus static images
+    {
+      id: 12,
+      type: 'image',
+      src: '/banner.png',
+      title: 'AIce Banner',
+      description: 'Official AIce branding'
+    },
+    {
+      id: 13,
+      type: 'image',
+      src: '/gg.png',
+      title: 'GG Vibes',
+      description: 'Game over for competitors'
+    },
+    {
+      id: 14,
+      type: 'image',
+      src: '/logo.png',
+      title: 'AIce Logo',
+      description: 'The mark of quality'
+    },
+    {
+      id: 15,
+      type: 'gif',
+      src: '/gif5.gif',
+      title: 'Animated Ice',
+      description: 'Pure ice animation'
     }
   ];
 
@@ -140,8 +220,8 @@ const MemesSection = () => {
           The coldest memes in crypto. Share the <span className="text-[#00FF00]">A</span><span className="text-[#ADD8E6]">ice</span> vibes with your crew! 🧊
         </motion.p>
 
-        {/* Memes Grid - 4 columns on larger screens */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
+        {/* Memes Grid - Responsive: 2 cols mobile, 3 cols tablet, 5 cols desktop */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-7xl mx-auto">
           {memes.map((meme, index) => (
             <motion.div
               key={meme.id}

@@ -1,7 +1,12 @@
 import { motion } from 'framer-motion';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaTelegram, FaTwitter, FaRobot } from 'react-icons/fa';
 
 const MobileMenu = ({ isOpen, setIsOpen }) => {
+  // Get social media URLs from environment variables
+  const telegramUrl = import.meta.env.VITE_TELEGRAM_URL || "https://t.me/aicecubeonabstract";
+  const twitterUrl = import.meta.env.VITE_TWITTER_URL || "https://x.com/cubeonabstract";
+  const botUrl = import.meta.env.VITE_BOT_URL || "https://x.com/aicexbt";
+
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -47,6 +52,43 @@ const MobileMenu = ({ isOpen, setIsOpen }) => {
           transition={{ delay: 0.4 }}
         >
           <span className="text-[#00FF00]">A</span><span className="text-[#ADD8E6]">ICE</span>
+        </motion.div>
+        
+        {/* Social Media Links */}
+        <motion.div 
+          className="flex space-x-6 mt-6"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+        >
+          <motion.a 
+            href={telegramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.2, rotate: 10 }}
+            className="text-[#ADD8E6] text-2xl hover:text-[#87CEEB] transition-colors"
+          >
+            <FaTelegram />
+          </motion.a>
+          <motion.a 
+            href={twitterUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.2, rotate: -10 }}
+            className="text-[#ADD8E6] text-2xl hover:text-[#87CEEB] transition-colors"
+          >
+            <FaTwitter />
+          </motion.a>
+          <motion.a 
+            href={botUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.2, rotate: 10 }}
+            title="Follow our AI bot"
+            className="text-[#00FF00] text-2xl hover:text-[#87CEEB] transition-colors"
+          >
+            <FaRobot />
+          </motion.a>
         </motion.div>
       </div>
     </motion.div>

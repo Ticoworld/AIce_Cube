@@ -104,7 +104,7 @@ const AboutSection = () => {
             <div>
               <FaRobot className="text-[#87CEEB]" />
             </div>
-           <span><span className="text-[#00FF00]">A</span><span className="text-[#ADD8E6]">Ice</span></span> Cube Preview
+           <span><span className="text-[#00FF00]">A</span><span className="text-[#ADD8E6]">Ice</span></span> Automated Bot
           </h3>
           <div className="bg-gradient-to-br from-[#1C2526] to-[#2A3B3D] rounded-lg p-6 h-64 flex items-center justify-center border border-[#ADD8E6]/20">
             <div className="text-center">
@@ -113,8 +113,17 @@ const AboutSection = () => {
               >
                 <FaRobot />
               </div>
-              <p className="text-[#87CEEB] text-lg">The meanest bot on Abstract is coming soon...</p>
-              <p className="text-[#ADD8E6] text-sm mt-2">Powered by Kaito farming technology</p>
+              <p className="text-[#87CEEB] text-lg mb-4">Meet our automated engagement bot!</p>
+              <p className="text-[#ADD8E6] text-sm mb-4">Powered by Kaito farming technology</p>
+              <a 
+                href={import.meta.env.VITE_BOT_URL}
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-[#00FF00] to-[#87CEEB] text-[#1C2526] px-6 py-2 rounded-lg font-semibold hover:from-[#87CEEB] hover:to-[#00FF00] transition-all duration-300 transform hover:scale-105"
+              >
+                <FaRobot />
+                Follow Bot
+              </a>
             </div>
           </div>
         </motion.div>

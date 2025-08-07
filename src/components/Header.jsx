@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaTelegram, FaTwitter, FaBars, FaTimes } from 'react-icons/fa';
+import { FaTelegram, FaTwitter, FaRobot, FaBars, FaTimes } from 'react-icons/fa';
 import { useState } from 'react';
 import MobileMenu from './MobileMenu';
 
@@ -10,6 +10,7 @@ const Header = () => {
   // Get social media URLs from environment variables
   const telegramUrl = import.meta.env.VITE_TELEGRAM_URL || "https://t.me/aicecubeonabstract";
   const twitterUrl = import.meta.env.VITE_TWITTER_URL || "https://x.com/cubeonabstract";
+  const botUrl = import.meta.env.VITE_BOT_URL || "https://x.com/aicexbt";
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -74,6 +75,15 @@ const Header = () => {
                 whileHover={{ scale: 1.2, rotate: -10 }}
               >
                 <FaTwitter className="text-[#ADD8E6] text-xl hover:text-[#E0F6FF] transition-colors" />
+              </motion.a>
+              <motion.a 
+                href={botUrl} 
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.2, rotate: 10 }}
+                title="Follow our AI bot"
+              >
+                <FaRobot className="text-[#00FF00] text-xl hover:text-[#87CEEB] transition-colors" />
               </motion.a>
             </div>
             
