@@ -89,7 +89,7 @@ const AboutSection = () => {
           </motion.div>
         </div>
         
-        <motion.div 
+        {/* <motion.div 
           className="mt-16 bg-[#1C2526]/50 border border-[#ADD8E6]/30 rounded-xl p-8 backdrop-blur-sm"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -122,7 +122,7 @@ const AboutSection = () => {
               </a>
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
